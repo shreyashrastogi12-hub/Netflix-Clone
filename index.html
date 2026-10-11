@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Clone | Movie Streaming UI</title>
+    <meta
+      name="description"
+      content="A Netflix-inspired movie streaming website built with HTML and CSS."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header class="navbar">
+      <a href="#home" class="logo">NETFLIX</a>
+
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#tv-shows">TV Shows</a>
+        <a href="#movies">Movies</a>
+        <a href="#trending">New & Popular</a>
+        <a href="#my-list">My List</a>
+      </nav>
+
+      <div class="nav-actions">
+        <form class="search-box" action="#movies">
+          <input
+            type="search"
+            placeholder="Search titles..."
+            aria-label="Search movie titles"
+          />
+          <button type="submit" aria-label="Search">⌕</button>
+        </form>
+        <span class="kids">KIDS</span>
+        <div class="profile">N</div>
+      </div>
+    </header>
+
+    <main id="home">
+      <!-- Featured banner -->
+      <section class="hero">
+        <div class="hero-content">
+          <p class="series-label"><span>N</span> SERIES</p>
+          <p class="top-rank">#1 in TV Shows Today</p>
+
+          <h1>STRANGER<br />THINGS</h1>
+
+          <div class="meta">
+            <span class="match">98% Match</span>
+            <span>2016-2025</span>
+            <span class="rating">16+</span>
+            <span>5 Seasons</span>
+          </div>
+
+          <p class="hero-description">
+            When a young boy disappears, a small town uncovers secret
+            experiments, supernatural forces and a mysterious girl with
+            extraordinary abilities.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#trailers" class="button button-white">▶ Play Trailer</a>
+            <a href="#tv-shows" class="button button-grey">ⓘ More Info</a>
+          </div>
+        </div>
+
+        <div class="age-label">16+</div>
+      </section>
+
+      <!-- Trending -->
+      <section class="movie-section" id="trending">
+        <h2>Trending Now <span class="arrow"></span></h2>
+
+        <div class="movie-row">
+          <a class="movie-card" href="#trailers">
+            <img
+              src="https://image.tmdb.org/t/p/w500/x2LSRK2Cm7MZhjluni1msVJ3wDF.jpg"
+              alt="Stranger Things poster"
+              loading="lazy"
+            >
+            <span class="number">1</span>
+            <div class="movie-info">
+              <h3>Stranger Things</h3>
+              <p>Sci-Fi · Drama</p>
+            </div>
+          </a>
+
+          <a class="movie-card">
+            <img src="images.jpg" alt="Wednesday" />
+            <span class="number">2</span>
+            <!-- Yeh line add karo -->
+            <div class="movie-info">
+              <h3>Wednesday</h3>
+              <p>Comedy · Horror</p>
+            </div>
+          </a>
+
+          <a class="movie-card" href="#trailers">
+            <img
+              src="https://image.tmdb.org/t/p/w500/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg"
+              alt="Money Heist poster"
+              loading="lazy"
+            />
+            <span class="number">3</span>
+            <div class="movie-info">
+              <h3>Money Heist</h3>
+              <p>Crime · Thriller</p>
+            </div>
+          </a>
+
+          <a class="movie-card" href="#trailers">
+            <img
+              src="https://image.tmdb.org/t/p/w500/dDlEmu3EZ0Pgg93K2SVNLCjCSvE.jpg"
+              alt="Squid Game poster"
+              loading="lazy"
+            />
+            <span class="number">4</span>
+            <div class="movie-info">
+              <h3>Squid Game</h3>
+              <p>Thriller · Drama</p>
+            </div>
+          </a>
+
+          <a class="movie-card" href="#trailers">
+            <img
+              src="https://image.tmdb.org/t/p/w500/7vjaCdMw15FEbXyLQTVa04URsPm.jpg"
+              alt="The Witcher poster"
+              loading="lazy"
+            />
+            <span class="number">5</span>
+            <div class="movie-info">
+              <h3>The Witcher</h3>
+              <p>Fantasy · Action</p>
+            </div>
+          </a>
+
+          <a class="movie-card" href="#trailers">
+            <img
+              src="image.jpg"
+              alt="The Queen's Gambit poster"
+              loading="lazy"
+            />
+            <span class="number">6</span>
+            <div class="movie-info">
+              <h3>The Queen's Gambit</h3>
+              <p>Drama</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- TV Shows -->
+      <section class="movie-section" id="tv-shows">
+        <h2>Popular TV Shows</h2>
+
+        <div class="movie-row">
+          <a class="movie-card" href="#trailers">
+            <img
+              src="https://image.tmdb.org/t/p/w500/7vjaCdMw15FEbXyLQTVa04URsPm.jpg"
+              alt="The Witcher poster"
+              loading="lazy"
+            />
+            <div class="movie-info">
+              <h3>The Witcher</h3>
+              <p>Fantasy · Action</p>
+            </div>
+          </a>
+
+          <a class="movie-card" href="#trailers">
+            <img src="Dark.jpg" alt="Dark series poster" loading="lazy" />
+            <div class="movie-info">
+              <h3>Dark</h3>
+              <p>Mystery · Sci-Fi</p>
+            </div>
+          </a>
+
+          <a class="movie-card" href="#trailers">
+            <img
+              src="https://image.tmdb.org/t/p/w500/sgxawbFB5Vi5OkPWQLNfl3dvkNJ.jpg"
+              alt="Lupin poster"
+              loading="lazy"
+            />
+            <div class="movie-info">
+              <h3>Lupin</h3>
+              <p>Crime · Mystery</p>
+            </div>
+          </a>
+
+          <a class="movie-card" href="#trailers">
+            <img
+              src="https://image.tmdb.org/t/p/w500/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg"
+              alt="Breaking Bad poster"
+              loading="lazy"
+            />
+            <div class="movie-info">
+              <h3>Breaking Bad</h3>
+              <p>Crime · Drama</p>
+            </div>
+          </a>
+
+          <a class="movie-card" href="#trailers">
+            <img
+              src="https://image.tmdb.org/t/p/w500/4EYPN5mVIhKLfxGruy7Dy41dTVn.jpg"
+              alt="The Crown poster"
+              loading="lazy"
+            />
+            <div class="movie-info">
+              <h3>The Crown</h3>
+              <p>Historical · Drama</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Movies -->
+      <section class="movie-section" id="movies">
+        <h2>Popular Movies</h2>
+
+        <div class="movie-row">
+          <a class="movie-card" href="#trailers">
+            <img
+              src="https://image.tmdb.org/t/p/w500/nygOUcBKPHFTbxsYRFZVePqgPK6.jpg"
+              alt="Extraction poster"
+              loading="lazy"
+            />
+            <div class="movie-info">
+              <h3>Extraction</h3>
+              <p>Action · Thriller</p>
+            </div>
+          </a>
+
+          <a class="movie-card" href="#trailers">
+            <img
+              src="https://image.tmdb.org/t/p/w500/cjr4NWURcVN3gW5FlHeabgBHLrY.jpg"
+              alt="The Old Guard poster"
+              loading="lazy"
+            />
+            <div class="movie-info">
+              <h3>The Old Guard</h3>
+              <p>Action · Fantasy</p>
+            </div>
+          </a>
+
+          <a class="movie-card" href="#trailers">
+            <img
+              src="Enola Holmes.jpg"
+              alt="Enola Holmes poster"
+              loading="lazy"
+            />
+            <div class="movie-info">
+              <h3>Enola Holmes</h3>
+              <p>Mystery · Adventure</p>
+            </div>
+          </a>
+
+          <a class="movie-card" href="#trailers">
+            <img
+              src="https://image.tmdb.org/t/p/w500/ui4DrH1cKk2vkHshcUcGt2lKxCm.jpg"
+              alt="Rebel Moon poster"
+              loading="lazy"
+            />
+            <div class="movie-info">
+              <h3>Rebel Moon</h3>
+              <p>Sci-Fi · Adventure</p>
+            </div>
+          </a>
+
+          <a class="movie-card" href="#trailers">
+            <img
+              src="Army of The Dead Poster.jpg"
+              alt="Army of the Dead poster"
+              loading="lazy"
+            />
+            <div class="movie-info">
+              <h3>Army of the Dead</h3>
+              <p>Action · Horror</p>
+            </div>
+          </a>
+
+          <a class="movie-card" href="#trailers">
+            <img
+              src="The Adam Project.jpg"
+              alt="The Adam Project poster"
+              loading="lazy"
+            />
+            <div class="movie-info">
+              <h3>The Adam Project</h3>
+              <p>Sci-Fi · Adventure</p>
+            </div>
+          </a>
+        </div>
+      </section>
+      <!-- HTML-only video player -->
+      <section class="trailer-section" id="trailers">
+        <h2>Watch a Trailer</h2>
+        <video
+          src="Stranger Things.mp4"
+          controls
+          width="640"
+          height="360"
+          poster="Stranger Things3.jpg"
+        >
+          <source src="videos/trailer.mp4" type="video/mp4" />
+          Your browser does not support HTML video.
+        </video>
+      </section>
+
+      <!-- FAQ -->
+      <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+
+        <details>
+          <summary>What is Netflix?</summary>
+          <p>
+            Netflix is a streaming service offering movies, TV shows,
+            documentaries and more. This project is an independent front-end
+            demo.
+          </p>
+        </details>
+
+        <details>
+          <summary>How much does Netflix cost?</summary>
+          <p>
+            Prices depend on your country and plan. Visit the official Netflix
+            website to check current prices.
+          </p>
+        </details>
+
+        <details>
+          <summary>Where can I watch?</summary>
+          <p>
+            Netflix is available on supported smart TVs, phones, tablets,
+            computers and streaming devices.
+          </p>
+        </details>
+
+        <details>
+          <summary>How do I cancel?</summary>
+          <p>
+            For an actual subscription, use your account settings or contact the
+            provider through which you subscribed.
+          </p>
+        </details>
+
+        <details>
+          <summary>What can I watch on Netflix?</summary>
+          <p>
+            The catalogue includes series, films, documentaries and other
+            titles, depending on your region.
+          </p>
+        </details>
+
+        <details>
+          <summary>Is Netflix good for kids?</summary>
+          <p>
+            Kids profiles and parental controls can help families select
+            age-appropriate entertainment.
+          </p>
+        </details>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>Questions? This is a Netflix-inspired learning project.</p>
+
+      <div class="footer-links">
+        <a href="#home">FAQ</a>
+        <a href="#home">Help Centre</a>
+        <a href="#home">Account</a>
+        <a href="#home">Media Centre</a>
+        <a href="#home">Investor Relations</a>
+        <a href="#home">Jobs</a>
+        <a href="#home">Ways to Watch</a>
+        <a href="#home">Privacy</a>
+        <a href="#home">Cookie Preferences</a>
+        <a href="#home">Corporate Information</a>
+        <a href="#home">Terms of Use</a>
+        <a href="#home">Contact Us</a>
+      </div>
+
+      <p class="country">Netflix Clone</p>
+    </footer>
+  </body>
+</html>
